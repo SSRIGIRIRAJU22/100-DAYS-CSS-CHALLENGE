@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: tomato;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+}
+
+.one-wraper {
+  background-color: white;
+  height: 40px;
+  width: 20px;
+  border-radius: 3px;
+  transform: rotate(50deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 197px;
+}
+
+.one {
+  height: 100px;
+  width: 20px;
+  background-color: white;
+  border-radius: 3px;
+  position: absolute;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.zero-one,
+.zero-two {
+  position: absolute;
+  left: 13px;
+  width: 100px;
+  height: 100px;
+  border: 25px solid white;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.zero-two {
+  left: 93px;
+  z-index: -1;
+}
+
+.big {
+  display: block;
+  position: absolute;
+  top: 87px;
+  font-size: 80px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.small {
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  top: 157px;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: .04em;
+  color: white;
+}
